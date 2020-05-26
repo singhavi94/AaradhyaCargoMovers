@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Loading..Please Wait</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Amarante' rel='stylesheet'>
+<link rel="icon" href="image/train-512.png" type="image/png">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+ 
+</head>
+<body>
+<style>
+
+body{background-color:white;
+  -webkit-animation-name: example;  
+  -webkit-animation-duration: 2s;  
+  animation-name: example;
+  animation-duration: 2s;}
+ 
+
+	.loader_well .well{margin-top:100px;background-color:transparent;border:none;border-radius:0px;}
+	.loader_well .well h1{text-align:center;font-family:Aladin;letter-spacing:2px;color:green;}
+	.loader_well .well p{text-align:center;font-family:Amarante;}
+	.loader_well .well img{width:100%;}
+	
+</style>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-4"> </div>
+		<div class="col-lg-4">
+			<div class="loader_well">
+				<div class="well">
+					<img src=loaders/.gif><br>
+					<h1><br>Logged In Successfully</h1>
+		         		<h1 style="font-size:20px;"><br>Welcome to RailGig</h1>
+		   		</div>
+			</div> 
+		</div>
+		<div class="col-lg-4"> </div>
+	</div>
+</div>
+
+    
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script>
+        setTimeout(function () {
+            window.location.replace("pleaseWAIT.html");  
+        }, 1000); 
+    </script>   
+</body>
+</html>

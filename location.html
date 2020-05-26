@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script type="text/javascript">
+
+   $.get("https://api.ipdata.co?api-key=test", function (response) {
+    var ipAddress = "Location : "+ response.city + ", " + response.region;
+    document.getElementById("ipAddress").value = ipAddress;
+    alert(ipAddress);
+
+   $("#response").html(JSON.stringify(response, null, 4));
+}, "jsonp");
+      </script>
+   </head>
+   <body>
+      
+<h1>IP geolocation API</h1>
+
+<div id="ip"></div>
+<div id="city"></div>
+<pre id="response"></pre>
+<input type="text" id="ipAddress">
+
+
+
+
+
+   </body>
+</html>

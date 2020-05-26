@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Birthday: <input type="text" id="myDate">
+
+<p>Click the button to set a date for the date field.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p><strong>Note:</strong> input elements with type="date" do not show as any date field/calendar in IE 11 and earlier versions.</p>
+
+<script>
+function myFunction() {
+var date = Date();
+alert(date);
+  document.getElementById("myDate").value = date;
+}
+</script>
+
+</body>
+</html>

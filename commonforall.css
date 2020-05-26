@@ -1,0 +1,95 @@
+
+  
+.section_add
+{
+  background-color: white;
+  height: 100%;
+}
+    #add_courier
+  {
+    padding-top:20px;
+    height:100%;
+    color: #fff; 
+    padding-bottom: 20px;
+
+    background-color:#F7F7F7;
+    
+    
+ 
+  }
+   #add_courier h2
+   {
+    letter-spacing: 3px;
+    text-align: center;
+    color: #2C37A0;
+    font-family: Acme;
+ 
+     
+   }
+    #add_courier h3
+   {
+    letter-spacing: 3px;
+    text-align:left;
+    color:  #2C37A0;
+ 
+     
+   }
+     #add_courier h4
+   {
+    
+    text-align:justify;
+    color: #2C37A0;
+    font-size: 16px;
+    padding:0px;
+  
+ 
+     
+   }
+    #add_courier p
+   {
+    letter-spacing: 1px;
+    text-align:justify;
+    font-size: 18px;
+    font-family:times new roman;
+    font-style:;
+   }
+   #add_courier h1
+   {
+    letter-spacing: 3px;
+    text-align: center;
+    font-family:rockwell; 
+   }
+   .ready_to_well .well
+  {
+    border-radius: 0px;
+    height: 100%;
+   border:1px solid #2C37A0;
+   color: #2C37A0;
+  
+  
+  }
+   
+  .ready_to_well .well a
+  {
+    color: orange;
+    text-decoration: none;
+  }
+  .ready_to_well .well label
+  {
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: rockwell;
+    font-size: 16px;
+    color: #2C37A0;
+}
+.ready_to_well .well input
+{
+  border-radius: 0px;
+  border:1px solid #2C37A0;
+}
+.ready_to_well .well textarea
+{
+  border-radius: 0px;
+  border:1px solid #2C37A0;
+}
+#add_courier .well i{color: #2C37A0;}

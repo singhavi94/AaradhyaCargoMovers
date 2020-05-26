@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Here</title>
+<link rel="icon" href="image/train-512.png" type="image/png">
+<link name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Autour One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+<link type="text/css"  href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+ 
+</head>
+  
+<body onload="capt();">
+<div class="container">
+	<div class="heading"></div>	
+		<div class="wrapper">
+			<div class="row">
+					<div class="col-lg-2" style="background-color:;">
+						  <div class="instructions" id="inst" style="margin-top:90px;cursor:pointer;" >
+						  		<h1 onmouseover="show(this);" onmouseout="hide(this);">RailGig</h1>	
+						  </div>
+						  	 
+						  	
+					</div>
+ 					 	<div class="col-lg-6"  style="background-color:;">
+ 					 		<div class="tooltip_box" id='h' style="display:none;">
+						  		
+							  	<div class="well">
+							  		 <p><span style="font-size:30px;">R</span>ailGig is one of the world's largest railway 
+							  		 network consists of freight, passengers, tourist, Suburban 
+							  		 rail systems, toy train and luxury trains. IR has 4,337 
+							  		 operating railway stations, operates on a multi-gauge network 
+							  		 of broad, metre and narrow gauges.</p>
+							  	</div>
+						  </div> 
+						  <div class="row">
+						  	<div class="col-lg-6"></div>
+						  	<div class="col-lg-6">
+						  		<div class="tooltip_user" id='username' style="display:none;">
+								  	<div class="well">
+								  		 <p>Enter Valid User ID</p>
+								  	</div>
+						  		</div> 
+						  		<div class="tooltip_pass" id='pass' style="display:none;">
+								  	<div class="well">
+								  		 <p>Enter Valid Password</p>
+								  	</div>
+						  		</div> 
+						  	</div>
+						  </div>
+						  
+ 					 	
+ 					 	</div>
+				   <div class="col-lg-4"  style="background-color:;">
+					  <br>  <br>  <br>  <br>  <br>  <br>
+			<div class=well>
+				 	 <div class="row">
+						   	<div class="col-lg-3"></div>
+						    <div class="col-lg-6">
+						    	<div class="img_box"><img src=image/user.png alt="user.png" ></div>
+						    </div>
+						    <div class="col-lg-3"></div>
+						</div>
+					<div class="row">
+					   	<div class="col-lg-12">  
+					  	 	<h3 style="text-align:center">Login Page</h3>
+					  	</div>
+					</div>
+			  <form onsubmit="return myFunction();" name="form" action="login" method="get">
+			  		
+			  		<div>	
+					   <div class="form-group"  >
+					   		<label>User id</label>
+					   		 <div class="user_icon"><i class="fa fa-user icon"></i>
+					   		<input class="form-control" type="text" placeholder="Your Name" onkeyup="" autofocus id="uname" name="Name1" style="padding-left:30px;">
+					   			<div class="info_icon"><i class="fa fa-info-circle" onmouseover="show_username(this);" onmouseout="hide_username(this);"></i></div> 
+					   		</div>
+					   		<p><div id="user_error" class="disp"></div></p>	
+					   </div> 
+				   </div>
+				   <div >
+					   <div class="form-group" >
+					   		<label>Password</label>
+					   		<div class="pass_icon"><i class="fa fa-key" aria-hidden="true"></i>
+					   		<input class="form-control" type="password" placeholder="Your Password"  id="pass" name="password1"  style="padding-left:30px;">
+					   		<div class="info_icon"><i class="fa fa-eye-slash" onclick="show_password();"></i></div>
+					   		</div>
+					   		
+					   		<p><div id="pass_error" class="disp"></div></p> 	
+					   </div> 
+				   </div>
+				
+					<h4>Don't have Account <a style="color:#F56705;" href="Registration.html">Register </a></h4> 
+					 
+					 <div class="row">
+					 	<div class="col-lg-2"></div>
+					 	<div class="col-lg-6">
+					 	<div class="dis_image" style="height:40px;width:150px;
+					 	background-image:url(image/dis.jpg);margin-bottom:10px;border:2px solid white;">
+					 		 
+								 <h3 id="demo" style="color:white;letter-spacing:10px;font-family:arial;margin-top:5px;"></h3> 
+						 
+						</div>
+					  
+					
+				 
+					 <!--  <button type="button"  onclick="alert(valid());" calss="btn btn-info">Submit</button>-->
+					 	
+					 	</div>
+					 	<div class="col-lg-2">
+					 	<i class="fas fa-sync" style="font-size:26px;color:red;cursor:pointer;padding-top:5px;" onclick="capt();"> </i>
+					 	 	  
+					 	</div>
+					 	<div class="col-lg-2"></div> 
+					 </div>
+					 <div class="row">
+					 	<div class="col-lg-12">
+					 		<div class="form-group">
+							  	<input type="text" class="form-control" id="insert_cap" placeholder="Enter Captcha Here">
+							 </div>
+					 	</div>
+					 </div>
+					 
+				<div class="row">
+					   <div class="col-lg-12">
+						   	<div class="form-group">
+						   		<input type="submit" class="btn btn-info btn-block" onclick="pop();" value="Log In" >
+						   	</div>
+					   	</div>
+					</div>
+					</div>
+					 <p id="show"></p>
+				</form>
+				 
+				 	  
+			</div>
+		</div>
+</div>
+<div class="row">
+		<div class="col-lg-4"></div>
+		<div class="col-lg-4">
+		<div class="well" id="boxsuc" style='display:none;'>
+			<div class="Warning">
+				<div class="row">
+					<div class="col-lg-4"></div>
+					<div class="col-lg-4">
+						<div class="well">
+							<button type="button" class="close" data-dismiss="alert" onclick="val();">&times;</button>
+							 
+						<h2><strong>RailGig</strong></h2><br>  
+					<p> <strong>Warning!</strong><br> Please enter a valid value in all the required fields before proceeding.</p>
+					 		<div class="row">
+								<div class="col-lg-4" style="background-color:"></div>
+								<div class="col-lg-4" style="background-color:">  
+									<!--  <button class="btn btn-warning" onclick="pop();">Close </button>-->
+								</div>
+								<div class="col-lg-4" style="background-color:"></div>
+				 			</div>
+						</div>
+					</div>
+					<div class="col-lg-4"></div>
+				</div>
+			</div>
+		</div>
+		 
+		</div>
+		<div class="col-lg-4"></div>
+	</div>	
+
+</div>
+
+<script>
+	
+	function login_valid()
+	{
+		var username=document.getElementById("uname").value;
+		var password=document.getElementById("pass").value;
+		if(username==0)
+			{
+			document.getElementById("user_error").innerHTML="Input any Userid.";
+			}
+		else if(password==0)
+			{
+			document.getElementById("user_error").innerHTML="Input any Password";
+			}
+		
+	}
+	 
+    function valid()
+    
+    {
+    	 var capt1=document.getElementById("demo").value;
+         var capt2= document.getElementById("insert_cap").value;
+    if(capt1===capt2)
+    { 
+    	 
+   	 return true;
+    }
+    else{ 
+    	 
+   	 return false;}
+    }
+    
+    function val()
+    {
+    	window.location.href='admin_login.html';
+    }
+
+</script>
+
+ <script>
+
+ 
+	
+	function myFunction() {
+		return valid();
+		 return val();
+		 
+		
+		 var name= document.getElementById("userid").value;
+		 var pass= document.getElementById("pass").value;
+		if(name.length==0 && pass.length==0)
+			{
+			 
+			return false;
+			}
+		else if(status==true)
+		{
+			 
+			return false;
+		}	
+		else{return true;}
+		 
+		
+		
+	}  
+		 
+	var c=1;
+	function pop()
+	{
+		if(c==1)
+			{
+			document.getElementById("boxsuc").style.display="block";
+			c=0;
+			}
+		else
+			{
+				document.getElementById("boxsuc").style.display="none";
+				c=1;
+			}
+	}
+ 
+ 
+</script>
+
+</body>
+</html>
+
+
+				
+

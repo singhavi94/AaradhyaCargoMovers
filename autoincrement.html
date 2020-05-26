@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+<title>untitled document</title>
+<style media="screen">
+body {
+    min-height:60em;
+    margin-top:30em;
+  }
+</style>
+</head>
+<body> 
+  <div id="info">I am inactive and y=0</div>
+<script>
+(function() {
+   'use strict';
+   var el=document.getElementById('info');
+window.onscroll=function() {
+   var y=window.pageYOffset;
+if(y>200) {
+   el.innerHTML='I am now active and y='+y;
+ }
+else {
+   el.innerHTML='I am inactive and y='+y;
+  }
+ }
+}());
+</script>
+</body>
+</html>

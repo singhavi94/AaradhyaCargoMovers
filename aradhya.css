@@ -1,0 +1,973 @@
+ 
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  
+}
+html
+{
+  scroll-behavior: smooth;
+}
+ .fa:hover
+  {
+    transform: rotate(360deg);
+    transition: 2s;
+    cursor: pointer;
+  }
+ nav.navbar
+ {
+  position: fixed;
+  width: 100%;
+ }
+ .navbar-brand
+ {
+    font-size:2em;
+    padding-top: 10px;
+    padding-left: 10px;
+    line-height: 1em;
+    letter-spacing: 2px;
+ }
+a.navbar-brand:hover 
+  {
+   transition: 0.7s;
+   
+   color: orange   !important;
+ }
+.navbar-header
+  {
+    height: 95px;
+  }
+  .navbar-header img
+  {
+    margin-top: 15px;
+  }
+.navbar 
+  {
+    margin-bottom: 0;
+    background-color:white ;
+    z-index: 9999;
+    border: 0;
+    font-size: 17px;
+    line-height: 1.42857143 !important;
+    letter-spacing: 1.2px;
+    border-radius: 0;
+    font-family:rockwell;
+  }
+.navbar li a, .navbar .navbar-brand 
+  {
+    color:#0C8FF9 !important;
+   font-family: 'Acme';
+    margin-top: 10px;
+    letter-spacing: 2px;
+  }
+.navbar-nav li a:hover, .navbar-nav li.active a 
+  {
+    color: orange   !important;
+    transition: 0.7s;
+  }
+.navbar-default .navbar-toggle 
+  {
+    border-color: transparent;
+    color: #fff !important;
+  }
+ 
+   #section1 
+  
+  {
+    padding-top:50px;
+    height:100%;
+     
+    background-image: url(image/21.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+.welcome h1
+  {
+    letter-spacing: 5px;
+    padding-left:30px; 
+    font-size: 2.5em; 
+    color: white; 
+    padding-bottom: 100px;
+    padding-top: 100px;
+    text-align: center;
+    font-family:acme;
+  }
+  .welcome h2
+  {
+    letter-spacing: 5px;
+     padding: 20px;
+    font-size: 2em; 
+    color:orange; 
+     
+    
+    
+    text-align: center;
+    font-family:acme;
+  }
+  .welcome h3
+  {
+     
+      padding-top: 20px;
+    color: white; 
+    font-size: 16px;
+     
+    text-align: center;
+    font-family:georgia header;
+  }
+.welcome span
+  {
+    color: white;
+  }
+.welcome h5
+  {
+    
+    text-align:left;
+    line-height: 20px;
+    font-family: times new roman;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 16px; 
+    line-height: 25px;
+    
+    border-left-style: solid;  
+    padding: 30px;
+  }
+.button 
+  { 
+    background-color:#0C8FF9; 
+    border: none;
+    color:white;
+    padding: 10px 20px;
+    font-family: acme;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 0px;
+    text-align: center;
+     
+    width: 100%;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+     
+  }
+.button a
+  {
+    text-decoration: none; 
+    color:white;
+  }
+ 
+   #section2 h2
+  {
+    letter-spacing: 3px;
+    text-align: center;
+    color:#0C8FF9; 
+    font-family: 'Acme';
+     
+  }
+
+
+      .imageBox
+  {
+    width: 350px;
+    height: 285px;
+    margin-top: 0px;
+    box-sizing: border-box;
+    padding: 0 10px;
+  }
+    .imageBox figure
+    {
+      position: relative;
+      margin:0;
+      padding: 0;
+      overflow: hidden;
+    }
+.imageBox figure:before,
+.imageBox figure:after
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+   
+  background:#0C8FF9;
+  transition: .5s;
+}
+.imageBox figure:before
+{
+  left: -50%;
+
+}
+.imageBox:hover figure:before
+{
+  left: 0;
+}
+.imageBox figure:after
+{
+  right: -50%;
+
+}
+.imageBox:hover figure:after
+{
+  right: 0;
+}
+.imageBox figure img
+  {
+    width: 100%;
+    height: 100%;
+  }
+.imageBox figure figcaption
+{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  background: #fff;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: .5s;
+  transition-delay: .5s;
+  cursor: pointer;
+  transform: translateY(20px);
+  z-index: 1;
+}
+.imageBox:hover figure figcaption
+{
+opacity:1;
+  transform: translateY(0);
+}
+.imageBox figure figcaption h1
+{
+margin: 0;
+padding: 0;
+font-size: 22px;
+}
+.imageBox figure figcaption p
+{
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 16px;
+}
+.imageBox figure figcaption a
+{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff1922;
+  color: #fff;
+  margin-top: 20px;
+  text-decoration: none;
+}
+#section2 
+  {
+    padding-top:50px;
+    height:100%;
+    background-color:#F7F7F7;
+  }
+  #section2 h4
+  {
+     letter-spacing: 2px;
+    text-align: center;
+    color:orange; 
+    font-family: georgia header;
+  }
+
+#guide_section 
+{
+  height:100%;
+  background-color:;
+padding-bottom: 30px;
+padding-top: 30px;
+}
+  #guide_section h2
+   {
+    letter-spacing: 3px;
+    text-align: center;
+    color:#0C8FF9; 
+   font-family: 'Acme';
+     
+   }
+    .guide_well  
+  {
+    height: 100%;
+    background-color:white;
+    border-radius: 0px;
+  }
+  .guide_well img
+  {
+    padding:5px;
+    border: 1px solid orange;
+    margin: 5px;
+  }
+
+
+
+  #brand_section 
+{
+  height:100%;
+  background-color:;
+padding-bottom: 30px;
+padding-top: 30px;
+}
+  #brand_section h2
+   {
+    letter-spacing: 3px;
+    text-align: center;
+    color:#0C8FF9; 
+   font-family: 'Acme';
+     
+   }
+    .partners_well  
+  {
+    height: 100%;
+    background-color:white;
+    border-radius: 0px;
+  }
+  .partners_well img
+  {
+    padding:5px;
+    border: 1px solid orange;
+    margin: 5px;
+  }
+  .btn-primary
+  {
+    border-radius: 0px;
+    border: 0px;
+    background-color:#3498DB  ;
+    border-bottom-left-radius: 10px;
+  }
+  .btn-primary:hover
+  {
+background-color:black;
+transition: 0.9s;
+  }
+   select.form-control 
+    {
+    border-radius: 0px;
+    }
+  .get_quote .well
+  {
+    background-color:#F7F7F7;
+    height: 100%;
+    
+    border: 1px solid orange;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-top: 20px;
+   
+  }
+   .get_quote .well img
+   {
+    width:100%;
+    border-top-right-radius: 30px;
+    margin-left: 8px;
+    margin-top: -6px;
+
+   }
+   .get_quote .well label
+   {
+    letter-spacing: 3px;
+    padding-top: 10px;
+    text-align: left;
+    color: black;
+    font-family: georgia header;
+     
+   }
+   .get_quote .well input
+   {
+    border-radius: 0px;
+    border: 1px solid steelblue;
+    background-color: #F7F7F7;
+   }
+    .get_quote .well select
+   {
+    border-radius: 0px;
+    border: 1px solid steelblue;
+    font-family: georgia header;
+    letter-spacing: 1px;
+    background-color: #F7F7F7;
+   }
+  
+   .get_quote .well textarea
+   {
+    border-radius: 0px;
+    border: 1px solid steelblue;
+    background-color: #F7F7F7;
+   }
+::-webkit-input-placeholder
+{
+  color: red;
+  font-family: georgia header;
+  letter-spacing: 1px;
+  font-size: 14px;
+}  
+
+    #section3 
+  {
+    padding-top:30px;
+    height:100%;
+    color: #fff;
+    background-color:#F7F7F7;
+    text-align: center; 
+    padding-bottom: 30px;
+  }
+  #section3 h2
+   {
+    letter-spacing: 3px;
+    text-align: center;
+    color:#0C8FF9; 
+   font-family: 'Acme';
+     
+   }
+    #section3 h4
+   {
+    letter-spacing: 3px;
+    text-align: center;
+    color:#0C8FF9; 
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: georgia header;
+     
+   }
+  .why_chooose_us_well
+  {
+    height: 100%;
+    background-color:;
+    border-radius: 0px;
+  }
+  .why_chooose_us_well i
+  {
+    color: orange;
+
+  }
+  #section3 h1
+   {
+    letter-spacing: 2px;
+    text-align:center;
+    color:orange; 
+    font-family: georgia header; 
+   }
+  #section3 h5
+   {
+    letter-spacing: 1px;
+    text-align:left;
+    color:black; 
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+     font-family: georgia header;
+   }
+    #section4 
+  {
+    padding-top:30px;
+    height:100%;
+    color: #fff; 
+    background-color:;
+    padding-bottom: 30px;
+  }
+  
+
+  #section4 h2
+   {
+    letter-spacing: 3px;
+    text-align: center;
+    color:#0C8FF9; 
+   font-family: 'Acme';
+    
+   }
+     .panel
+                      {
+                        border-radius: 0px;
+                        border: 1px solid orange;
+                        cursor: pointer;
+                        border-top-right-radius:10px;
+                        border-top-left-radius: 0px;
+                      }
+                      .panel-heading
+                      {
+                        background-color:orange ;
+                        border-top-right-radius:8px;
+                        border-top-left-radius: 0px;
+                      }
+                       .panel-heading .fa:hover
+                       {
+                        transform: rotate(180deg);
+                        transition: 0.8s;
+                       }
+                      .panel-title a
+                      {
+                        letter-spacing: 2px;
+                        text-align: center;
+                        color:white; 
+                        text-decoration: none;
+                        font-family: georgia header;
+                         
+                      }
+.our_services_well
+  {
+    height: 100%;
+    background-color:#F7F7F7;
+    border-radius: 0px;
+  }
+  #section5 
+  {
+    padding-top:30px;
+    height:100%;
+    background-color:#F7F7F7;
+    padding-bottom: 30px;
+  }
+#section5 h2
+   {
+    letter-spacing: 3px;
+    text-align: center;
+    color:#0C8FF9; 
+   font-family: 'Acme';
+    
+   }
+
+  .special_requests_well .well
+  {
+    height:100%;
+    background-color: white;
+    border-radius: 0px;
+    background-image: url(image/03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+  .special_requests_well .well h2
+  {
+    letter-spacing: 3px;
+    text-align:center;
+    font-family:rockwell;
+  }
+  .special_requests_well .well h5
+  {
+    letter-spacing: 3px;
+    text-align: center;
+    font-family:georgia header;
+    font-size: 18px;
+  }
+  .special_requests_well .well span
+  {
+    color: orange;
+  }
+  .special_requests_well .well h4
+  {
+    letter-spacing: 3px;
+    text-align: center;
+    font-family:rockwell;
+  }
+    #section6
+  {
+    padding-top:30px;
+    height:100%;
+    color: #fff; 
+     background-color:;
+     padding-bottom: 30px;
+  }
+   .Our_Effective_well .well
+  {
+    height: 100%;
+    background-color:black;
+    border-radius: 0px;
+    border-color: black;
+  }
+  .Our_Effective_well .well img
+  {
+    height: 200px;
+    width: 200px;
+   border-radius: 50%;
+   margin-left:-40px;
+   cursor: pointer;
+  }
+  .Our_Effective_well .well:hover img
+  {
+    transition: 0.7s;
+    transform:scale(1.1);
+    border: 3px solid orange;
+  }
+  .Our_Effective_well .well i
+  {
+    font-size: 20px;
+    color:orange;
+    padding: 5px;
+    text-align: left;
+  }
+    #section7 
+  {
+    padding-top:30px;
+    height:100%;
+    color: #fff; 
+     background-color:#F7F7F7;
+     padding-bottom: 30px;
+  }
+   #section7 h2
+   {
+    letter-spacing: 3px;
+    text-align: center;
+    color: #0C8FF9;
+   font-family: 'Acme';
+     
+   }
+   #section7 h3
+   {
+    letter-spacing: 3px;
+    text-align: center;
+    font-family:rockwell;
+    font-size: 20px;
+     }
+      #section7 h4
+   {
+    letter-spacing: 3px;
+    text-align: center;
+    font-family:rockwell;
+    font-size: 14px;
+    color: #B9C7CC    ;  
+   }
+.ready_to_get_well .well
+  {
+    border-radius: 0px;
+    height: 100%;
+    margin-top: 70px;
+    background-color: transparent;
+  }
+  .ready_to_get_well .well img
+  {
+    margin-top: -80px;
+  }
+  .ready_to_get_well .well a
+  {
+    color: orange;
+    text-decoration: none;
+  }
+ 
+    #section8
+  {
+    padding-top:20px;
+    height:100%;
+    color: #fff; 
+    padding-bottom: 20px;
+    background-image: url(image/21.jpg);
+    background-size: cover;
+    background-color:green;
+    background-repeat: no-repeat;
+  }
+   #section8 h2
+   {
+    letter-spacing: 3px;
+    text-align: center;
+    color: #0C8FF9;
+   font-family: 'Acme';
+     
+   }
+    #section8 p
+   {
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: rockwell;
+    font-style: italic;
+   }
+   #section8 h1
+   {
+    letter-spacing: 3px;
+    text-align: center;
+    font-family:rockwell; 
+   }
+ .our_customers_well .well
+  {
+    height: 100%;
+    border-radius:0px;
+    border:1px solid orange;
+    background-color: white;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .our_customers_well .well img
+  {
+    height:80px;
+    width: 80px;
+    border-radius: 50%;
+    border:1px solid orange;
+  }
+    #our_customers
+  {
+    padding-top:20px;
+    height:100%;
+    color: #fff; 
+    padding-bottom: 20px;
+    background-color:;  
+  }
+   #our_customers h2
+   {
+    letter-spacing: 3px;
+    text-align: center;
+    color: #0C8FF9;
+   font-family: 'Acme'; 
+   }
+   #our_customers h5
+   {
+    letter-spacing: 1px;
+    text-align:left;
+    color:black;
+    font-size: 16px;
+   font-family:georgia header; 
+   }
+   #our_customers h4
+   {
+    letter-spacing: 3px;
+    text-align:left;
+    color:#0C8FF9;
+   font-family: 'Acme'; 
+   }
+  .button_read_more 
+  { 
+    background-color:black; 
+    border: none;
+    color:white;
+    padding: 10px 20px;
+    font-family: georgia header;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius:0px;
+    text-align: center;
+    letter-spacing: 2px;
+ 
+  }
+.button_read_more a
+  {
+    text-decoration: none; 
+    color:white;
+  }
+   .contact_us_well .well
+  {
+    height:195px;
+    border-radius: 0px;
+    background-color:white;
+    border:1px solid orange;
+     padding:20px;
+
+  }
+  .address_well .well
+  {
+   height:195px;
+    border-radius: 0px;
+    background-color: white;
+     border:1px solid orange;
+      padding:20px;
+  }
+   .location_well .well
+  {
+   height:195px;
+    border-radius: 0px;
+    padding: 5px;
+
+    background-color: white;
+     border:1px solid orange;
+  }
+    #section9
+  {
+    padding-top:30px;
+    height:100%;
+    letter-spacing: 3px;
+    background-color:#F7F7F7;
+    padding-bottom: 30px;
+    background-image: url(image/35.jpg);
+
+    
+    font-family: georgia header;
+  }
+     #section9 h2
+  {
+   
+    letter-spacing: 3px;
+     
+    text-align: center;
+    color: #0C8FF9;
+    font-family: 'Acme';
+
+  }
+  #section9 h5
+  {
+   
+    letter-spacing: 3px;
+    font-size: 20px;
+    text-align: center;
+    color:orange;
+    font-family: georgia header;
+  }
+   #section9 i
+  {
+    font-size: 22px;
+    color:orange;
+  }
+       #section9 h4
+  {
+    letter-spacing: 3px;
+    font-family: georgia header;
+
+  }
+   #section9 p
+  {
+    letter-spacing: 3px;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: georgia header;
+  }
+   .navigation h4
+    {
+    letter-spacing: 3px;
+    text-align:left;
+    color: #0C8FF9;
+    font-family:rockwell;
+    }
+    .navigation h6
+    {
+      font-family: georgia header;
+      text-align: left;
+      font-size: 16px;
+      letter-spacing: 1px;
+      line-height: 20px;
+    }
+    .social
+    {text-align: center;}
+    .navigation a
+    {
+      color: white;
+      text-decoration: none;
+    }
+    .navigation i
+    {
+      color:orange;
+      font-size: 16px;
+      border: 1px solid orange;
+      padding: 8px;
+      border-radius: 50%;
+    }
+     .navigation p
+     {
+      font-family: georgia header;
+      text-align: left;
+      font-size: 16px;
+      line-height: 20px;
+    }
+      .move_up a
+      {
+        color: white;
+      }
+       .move_up .fa
+       {
+        transform: rotate(0deg);
+       }
+      .move_up i
+      {
+          scroll-behavior: smooth;
+          font-size: 16px;
+          padding-top: 10px;
+          padding-left: 12px;
+          float: right;
+          height: 40px;
+          width: 40px;
+          background-color: black;
+          border-radius: 50%;
+          margin-right: 10px;
+          cursor: pointer;
+      }
+#section10 input
+{
+  border:1px solid steelblue;
+  border-radius: 0px;
+}
+.btn-info
+{
+  border-radius: 0px;
+  background-color: orange;
+  border:none;
+  font-family: georgia header;
+  letter-spacing: 3px;
+}
+.btn-info:hover
+{
+  background-color: orange;
+}
+.btn-danger
+{
+  border-radius: 0px;
+  background-color: #0C8FF9;
+  border:none;
+  font-family: georgia header;
+  letter-spacing: 3px;
+}
+.btn-danger:hover
+{
+  background-color: #0C8ff9;
+}
+#section10 h4
+{
+   font-family: georgia header;
+      text-align: left;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 2px;
+}
+    #section10
+  {
+    padding-top:10px;
+    height:100%;
+    color: #fff; 
+    background-color:#3D4446   ; 
+  }
+   
+      .footer h5
+      {
+        font-family: rockwell;
+        color: white;
+        letter-spacing: 3px;
+        padding: 10px;
+        border: 1px solid white;
+        text-align: center;
+         
+      }
+      .footer h5 a
+      {
+        text-decoration: none;
+      } 
+
+
+          
+
+        
+
+ 
